@@ -1,0 +1,9 @@
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.12.0"> </script>\n
+
+\
+
+<script>\n\ async function loadModel(){ \n\ model = await tf.loadModel(\'web_model/model.json\') \n\ y = model.predict(tf.zeros([1,2])) \n\ document.getElementById(\'out\').innerHTML = y.dataSync()[0] \n\ } \n\ loadModel() \n\ </script>\n\ \n
+\
+
+\n\
+\n\
