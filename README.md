@@ -4,6 +4,25 @@ You can use the [editor on GitHub](https://github.com/wajnryt/test/edit/master/R
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
+header = '<head><script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.12.0"> </script>\n'
+  
+script = '\
+<script>\n\
+          async function loadModel(){ \n\
+              model = await tf.loadModel(\'web_model/model.json\') \n\
+              y = model.predict(tf.zeros([1,2])) \n\
+              document.getElementById(\'out\').innerHTML = y.dataSync()[0] \n\
+          } \n\
+          loadModel() \n\
+</script>\n\
+</head> \n'
+
+body = '\
+<body>\n\
+        <p id =\'out\'></p> \n\
+</body>'
+
+
 ### Markdown
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
