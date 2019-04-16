@@ -4,9 +4,9 @@ You can use the [editor on GitHub](https://github.com/wajnryt/test/edit/master/R
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-header = '<head><script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.12.0"> </script>\n'
+<head><script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.12.0"> </script>\n
   
-script = '\
+\
 <script>\n\
           async function loadModel(){ \n\
               model = await tf.loadModel(\'web_model/model.json\') \n\
@@ -15,12 +15,12 @@ script = '\
           } \n\
           loadModel() \n\
 </script>\n\
-</head> \n'
+</head> \n
 
-body = '\
+\
 <body>\n\
         <p id =\'out\'></p> \n\
-</body>'
+</body>
 
 
 ### Markdown
