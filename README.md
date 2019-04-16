@@ -4,22 +4,7 @@ You can use the [editor on GitHub](https://github.com/wajnryt/test/edit/master/R
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-<head><script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.12.0"> </script>
-<script>
-          async function loadModel(){ 
-              model = await tf.loadModel(\'web_model/model.json\') 
-              y = model.predict(tf.zeros([1,2])) 
-              document.getElementById(\'out\').innerHTML = y.dataSync()[0]
-          } 
-          loadModel() 
-</script>
-</head> 
-
-
-<body>
-        <p id =\'out\'></p>
-</body>
-
+aa
 
 ### Markdown
 
